@@ -1,0 +1,42 @@
+4. Cos'è Una classe? A che serve il self?
+
+La classe è fondamentale per la programmazione OOP (Orientata agli oggetti), consente di definire un concetto presente nel mondo reale e quindi riportarlo nel codice come se fosse un determinato tipo.
+Esse definiscono strutture dati che possiedono dati, ossia gli attributi, e metodi che ne descrivono il comportamento.
+Il self è una keyword che viene utilizzata all'interno della classe e sta ad indicare un oggetto che punta a se stesso.
+
+6. Cos'è una collezione/aggregazione? Quali sono quelle che conosci? come si differenziano?
+
+Per "collezione/aggregazione" si intende appunto una collezione di dati. In python abbiamo diversi modi per aggregare dati:
+-Liste: le liste sono aggregazioni di dati, essi possono essere Stringhe, Interi, char e, perfino, liste! Le riconosciamo poiché
+        utilizzano le parentesi quadre []. Esse inoltre possiedono molti metodi incorporati molto utili per la manipolazione ed operazioni su quest'ultime.
+        es. saluto = ["ciao","simone","come va?"]
+
+-Tuple: molto simili alle liste. Esse hanno la particolarita che vengono indicate tramite le parentesi tonde () e sono immutabili (una volta create non possono essere modificate).
+        es. tupla = (1,2,3)
+
+-Insiemi: detti anche sets, sono una struttura dati non ordinata (per inserimento, ma per valore ascendente) e senza duplicati.
+        es. insieme = set([1,2,3])
+
+-Dizionari: essi sono indicati tramite le parentesi graffe {} e sono caratterizzati dal fatto che viene utilizzato il "metodo" chiave:valore, ossia che ad ogni chiave nel dizionario viene associato un valore.
+        es. auto = {
+            "marca" : "BMW",
+            "modello" : "X1",
+            "Anno" : 2016
+        }
+
+12. Quali sono le tre regole fondamentali? Cosa fanno?
+
+Le tre regole fonamentali sono:
+-Incapsulamento: Nasconde i dettagli della classe(funzionamento)
+-Ereditarietà: Creare nuove classi basate su classi esistenti
+-Polimorfismo: Oggetti diversi possono rispondere allo stesso metodo in modo diverso
+
+
+
+14. Cosa sono le funzioni ? Perché incarnano passivamente il concetto di astrazione? Cos'è l'astrazione nella programmazione ?
+
+Le funzioni sono pezzi di codice ripetibile quando viene chiamato. Esse incarnano il concetto di astrazione poiché noi le definiamo e scriviamo il loro comportamento
+in una parte del codice, e poi le richiamiamo utilizzando solamente il nome, "astraendo" la loro funzione. Quindi il concetto di astrazione è la capacità
+di dividere il corpo di un elemento e l'azione. Esse vengono definite in questo modo:
+def nomefunzione ():
+    corpo
