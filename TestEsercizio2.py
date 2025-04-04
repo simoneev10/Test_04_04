@@ -6,7 +6,7 @@
 def lungstringhe():
     stringhe = []
     cont = 0
-    
+    # Controllo prima stringa (necessaria)
     if (primaStringa := input("Inserisci la prima stringa: ")):
         stringhe.append(primaStringa)
         cont += 1
@@ -14,14 +14,14 @@ def lungstringhe():
         print("Devi inserire almeno una stringa!")
         return
     
-    while True:
+    while True: #Gestione Gioco
         ultLunghezza = len(stringhe[-1])
         insStringa = input(f"Inserisci una stringa più lunga di {ultLunghezza} se vuoi andare avanti: ")
         
-        if not insStringa:
+        if not insStringa: # Se non inserisci nulla esci
             break
         
-        if len(insStringa) > ultLunghezza:
+        if len(insStringa) > ultLunghezza:# Controllo lunghezza e aggiunta
             stringhe.append(insStringa)
             cont += 1
         else:
@@ -29,7 +29,7 @@ def lungstringhe():
             break
         
         print("\nLe stringhe inserite sono:")
-        for i in range(len(stringhe)):
+        for i in range(len(stringhe)): # Scorro per poter stampare ed aggiungo anche una virgola tra le stringhe
             if i == len(stringhe) - 1:
                 print(stringhe[i])
             else:

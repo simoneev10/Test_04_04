@@ -40,3 +40,9 @@ in una parte del codice, e poi le richiamiamo utilizzando solamente il nome, "as
 di dividere il corpo di un elemento e l'azione. Esse vengono definite in questo modo:
 def nomefunzione ():
     corpo
+
+16. Cos'è il concetto di controllo di flusso? Quali famiglie ne fanno parte? Spiega gli elementi di queste famiglie teoricamente
+
+Il concetto di controllo di flusso, data una condizione un flusso puù andare avanti solo se quella condizione viene rispettata.
+Ci sono i cicli, come il while, il for ed il range: essi scorrono una struttura dati, o più in generale un x numero di volte un certo pezzo di codice
+Poi ci sono if-elif-else e switch, che a seconda della condizione rispettata ti fa entrare in una parte di codice
